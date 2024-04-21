@@ -19,6 +19,6 @@ npm install express body-parser
 node index.js
 ```
 
-## More to come
+View application at localhost:3000
 
 
