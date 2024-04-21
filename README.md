@@ -16,6 +16,10 @@ Clone this repository to your local machine using the following command:
 git clone <repository_url>
 npm init -y
 npm install express body-parser
+node index.js
+```bash
 
+
+## More to come
 
 
