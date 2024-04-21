@@ -1,6 +1,4 @@
-# ScalableShell
-
-# Interactive Bash Shell Simulation
+# Scalable Shell
 
 This project provides an interactive simulation of a bash shell using Node.js and Express.
 
@@ -16,22 +14,8 @@ Clone this repository to your local machine using the following command:
 
 ```bash
 git clone <repository_url>
-
-### Setup
-
-```bash
 npm init -y
-
-### Install Dependencies
-
-```bash
 npm install express body-parser
-
-### Run Application 
-
-```bash
-node index.js
-
 
 
 
