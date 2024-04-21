@@ -16,7 +16,6 @@ app.post('/command', (req, res) => {
     console.log('Received command:', command);
 
     // Here you can process the command as needed
-    // For demonstration, let's simply send back a response
     res.json({ response: `Server Response: ${command}` });
 });
 
