@@ -13,7 +13,7 @@ Make sure you have Node.js, npm and git installed on your system.
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone (https://github.com/metamike23/ScalableShell.git)
+git clone https://github.com/metamike23/ScalableShell.git
 npm init -y
 npm install express body-parser
 node index.js
