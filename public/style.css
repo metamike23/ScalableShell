@@ -1,0 +1,123 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.editor-container {
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: 80vh;
+    margin: 10px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+.control-panel {
+    margin-bottom: 10px; /* Space between the control panel and the textarea */
+    text-align: left; /* Aligns the buttons to the left */
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    color: #007BFF; /* Theme color to match the toggle button */
+    cursor: pointer;
+    font-size: 18px; /* Sizable icons for better visibility */
+    padding: 5px 10px; /* Spacing around icons */
+}
+
+/* Document editor styling */
+#document-editor {
+    width: 100%; /* Full container width */
+    height: 80vh; /* Height adjusted to leave space for shell when open */
+    padding: 20px; /* Padding for inner content */
+    box-sizing: border-box; /* Include padding in the height */
+}
+
+/* Bootstrap container adjustments if needed */
+.container {
+    position: relative; /* Context for absolute positioning */
+    height: 100%; /* Full height of its parent */
+}
+
+#toggle-shell-btn {
+    position: fixed; /* Overlaps the editor at the top-right corner */
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Shell container - make it overlay content */
+#shell-container {
+    position: fixed; /* Fixed position to cover the content */
+    bottom: 0; /* Align to the bottom of the viewport */
+    left: 0; /* Stretch from the left edge */
+    right: 0; /* Stretch to the right edge */
+    width: 100%; /* Full width */
+    height: 50vh; /* Adjust the height as per your design */
+    background: #333; /* Dark background for the shell */
+    z-index: 1050; /* Higher z-index to ensure it's on top */
+    display: none; /* Start hidden and toggle visibility */
+    overflow-y: auto; /* Allow scrolling within the shell */
+}
+
+.bash-shell {
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+
+
+
+
+
+
+
+
+.command-line {
+    display: flex; /* Ensures that the prompt and input are in one line */
+    align-items: center; /* Aligns items vertically */
+    white-space: nowrap; /* Prevents wrapping within the command line */
+}
+
+#command-input, .bash-shell input[type="text"] {
+    background: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    width: 100%; /* Takes the remaining space */
+    flex-grow: 1; /* Allows the input to expand within flex container */
+}
+
+.user, .directory {
+    white-space: nowrap; /* Prevents breaking into a new line */
+}
+
+#ascii-art {
+    color: cyan; /* Choose a color that stands out */
+    font-family: monospace;
+    white-space: pre; /* This ensures that the spacing in the ASCII art is maintained */
+    margin: 5px 0; /* Add some spacing around the ASCII art */
+}
+
+
+
