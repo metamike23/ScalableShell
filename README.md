@@ -16,3 +16,22 @@ Clone this repository to your local machine using the following command:
 
 ```bash
 git clone <repository_url>
+
+### Setup
+
+```bash
+npm init -y
+
+### Install Dependencies
+
+```bash
+npm install express body-parser
+
+### Run Application 
+
+```bash
+node index.js
+
+
+
+
