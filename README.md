@@ -20,6 +20,3 @@ node index.js
 
 
 
-## More to come
-
-
